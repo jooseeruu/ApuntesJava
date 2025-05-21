@@ -119,6 +119,28 @@ public class Original {
         System.out.println("Clasificación ordenada de mayor a menor.\n");
     }
 
+    /*
+    private void updateLeague() {
+    int n = league.size();
+    // Bubble sort descendente por puntos
+    for (int i = 0; i < n - 1; i++) {
+         // En cada pasada 'i' queda el elemento correcto al final,
+         // por eso reducimos el límite interno en cada iteración.
+        for (int j = 0; j < n - 1 - i; j++) {
+            if (league.get(j).points < league.get(j + 1).points) {
+                // Intercambiamos posiciones j y j+1
+                Team temp = league.get(j);
+                league.set(j, league.get(j + 1));
+                league.set(j + 1, temp);
+            }
+        }
+    }
+
+    System.out.println("Clasificación ordenada de mayor a menor.\n");
+}
+
+     */
+
     // 2 puntos CProf 2
     private void viewLeague() {
         updateLeague(); // Asegura que siempre se muestre ordenada
